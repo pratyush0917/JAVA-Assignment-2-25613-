@@ -1,0 +1,122 @@
+class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Main Method");
+	}
+}
+//Java code to understand that The Order of Modifiers don't matters
+class Test
+{
+	static public void main(String[] args)
+	{
+		System.out.println("Main Method");
+	}
+}
+class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Main Method");
+	}
+}
+class Test
+{
+	public static void main(String []args)
+	{
+		System.out.println("Main Method");
+	}
+}
+class Test
+{
+	public static void main(String args[])
+	{
+		System.out.println("Main Method");
+	}
+}
+class Gfg{
+
+	public static void main(String[] geeksforgeeks){
+			System.out.println("Instead of args we have written geeksforgeeks");
+	}
+}
+//Java code-> using Var-Args instead of the array
+//please note these code may not run in gfg IDE, better run it on other IDEs e.g, eclipse
+class Gfg{
+	
+		final public static void main(String... args){
+		System.out.println("Var-args main method");
+	}
+}
+class Test
+{
+	public static void main(final String[] args)
+	{
+		System.out.println("Main Method");
+	}
+}
+//Java code having the final main method
+////please note these code may not run in gfg IDE, better run it on other IDEs e.g, eclipse
+class Gfg{
+
+	final public static void main(String[] args){
+		
+		System.out.println("final main method");
+
+		}
+}
+//Java code having Synchronized main method
+//please note these code may not run in gfg IDE, better run it on other IDEs e.g, eclipse
+class Test
+{
+	public synchronized static void main(String[] args)
+	{
+		System.out.println("Main Method");
+	}
+}
+//Java code-> using strictfp modifier in main method
+//please note these code may not run in gfg IDE, better run it on other IDEs e.g, eclipse
+class Test
+{
+	public strictfp static void main(String[] args)
+	{
+		System.out.println("Main Method");
+	}
+}
+class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Main Method String Array");
+	}
+	public static void main(int[] args)
+	{
+		System.out.println("Main Method int Array");
+	}
+}
+class A
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Main Method Parent");
+	}
+}
+
+class B extends A
+{
+
+}
+class A
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Main Method Parent");
+	}
+}
+class B extends A
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Main Method Child");
+	}
+}
